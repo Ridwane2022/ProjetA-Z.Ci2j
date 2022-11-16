@@ -1,0 +1,92 @@
+/*** pour agir sur tout le code ***/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans condensed', sans-sherif;
+}
+/*** section header ***/
+header{
+    text-transform: uppercase;
+    background-color: #416941;
+    height: 68px;
+}
+header h1{ 
+    color: aliceblue;
+    margin: 0 5px;
+    line-height: 60px;
+    text-shadow: 3px 3px 3px rgb(200, 14, 14);/**donne de noirceur sur le rebord du texte**/
+}
+ header nav{ 
+    float: right;
+    position: relative;
+    top: -60px;
+    z-index:1;
+}
+header nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+    float: left;
+    padding: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    color:whitesmoke ;
+    text-shadow: 3px 3px 3px black;
+    line-height: 38px;
+}
+header nav ul li ul{
+    position: absolute;
+    visibility: hidden;
+    right: 1px;
+    top: 68px;
+}
+header nav ul li ul li{
+    background-color:rgba(0, 221, 255, 0.344);
+    width: 250px;
+}
+header nav ul li:hover ul{
+    visibility: visible;
+}
+header nav ul li:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+/***Carausel***/
+header #all-slider img{
+    width: 100%;
+    }
+header #all-slider #slider{
+     width: 100%;
+        height: 100vh;
+        margin: 1em auto;
+        overflow: hidden;
+        position: relative;
+        bottom: 60px;
+    }
+    .slide{
+        max-width: 100%;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        animation: slide 25s linear infinite;
+    }
+    .slide:nth-child(2){animation-delay:5s;}
+    .slide:nth-child(3){animation-delay:10s;}
+    .slide:nth-child(4){animation-delay:15s;}
+    .slide:nth-child(5){animation-delay:20s;}
+
+    @keyframes slide{
+         0%, 20%, 40%, 60%, 80%, 100%{
+            opacity: 0;
+        }
+         5%, 15%{
+            opacity: 1;
+        }
+    }
