@@ -134,4 +134,46 @@ header #all-slider #slider{
         background-color: darkgreen;
         font: bold 15 Arial;
     }
+    /*** section ***/
+    section#container{
+        position: relative;
+        top: 915px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    section#container #etapes .etape1 img,
+    section#container #etapes .etape3 img{
+        width: 80px;
+        height: 80px;
+    }
+    section#container #etapes .etape2 img{
+        width: 128px;
+        height: 120px;
+    }
+    section#container #etapes div{
+        display: inline-block;
+        width: 300px;
+    }
+    section#container h4{
+        color: blue;
+        text-transform: uppercase;
+    }
+    section#container #etapes div{
+        display: inline-block;
+        width: 300px;
+    }
+    section#container h4{
+        color:blue;
+    }
+    section#container  section>h4{
+        font-size: 50px;
+        border-bottom: 5px solid black;
+    }
+    section#container{
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
 
